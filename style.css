@@ -1,0 +1,131 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #222;
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #6200ea;
+  color: white;
+  position: relative;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.motto {
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+#toggle-dark {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1.2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* About Section */
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.profile-img {
+  width: 180px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-text {
+  flex: 1;
+}
+
+/* Projects Section */
+.projects h2,
+.contact h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #6200ea;
+}
+
+.project {
+  background-color: #fff;
+  padding: 1.2rem;
+  margin: 1rem 0;
+  border-left: 5px solid #6200ea;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Contact */
+.contact p {
+  margin: 0.8rem 0;
+}
+
+.contact a {
+  color: #6200ea;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  background-color: #eee;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.dark-mode .header {
+  background-color: #1f1f1f;
+}
+
+.dark-mode .project {
+  background-color: #1e1e1e;
+  border-left-color: #bb86fc;
+}
+
+.dark-mode .contact a {
+  color: #bb86fc;
+}
+
+.dark-mode footer {
+  background-color: #1f1f1f;
+}
